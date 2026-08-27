@@ -201,6 +201,15 @@ body::before {
 }
 .nav-links > a:not(.btn):hover { border-bottom-color: var(--oxide); }
 
+.nav-note {
+  font-family: var(--font-script);
+  color: var(--oxide);
+  font-size: 1.2rem;
+  line-height: 1;
+  white-space: nowrap;
+  transform: rotate(-3deg);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -848,6 +857,10 @@ a.ccard:hover { border-color: var(--navy); background: var(--paper-bright); }
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 1120px) and (min-width: 861px) {
+  .nav-note { display: none; }
+}
+
 @media (max-width: 900px) {
   .band-cols { grid-template-columns: 1fr; gap: 2rem; }
   .contact-inner { grid-template-columns: 1fr; }
@@ -877,6 +890,11 @@ a.ccard:hover { border-color: var(--navy); background: var(--paper-bright); }
   .nav-links .btn-call {
     margin-top: 1rem;
     justify-content: center;
+  }
+  .nav-note {
+    text-align: center;
+    font-size: 1.35rem;
+    padding-top: 0.7rem;
   }
 
   .board {
