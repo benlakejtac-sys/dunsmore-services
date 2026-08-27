@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Steve's Setup Steps — Dunsmore Services Website</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231F3A5C'/%3E%3Cpath d='M20 40 32 28l12 12M24 38v8h16v-8' stroke='%23F1EEE6' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #F1EEE6;
+      color: #1F3A5C;
+      font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 640px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+    header { text-align: center; margin-bottom: 1.5rem; }
+    h1 {
+      font-family: "Anton", Impact, sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: clamp(1.9rem, 7vw, 2.6rem);
+      line-height: 1.05;
+      margin: 0 0 0.6rem;
+    }
+    .sub { color: rgba(31,58,92,.8); margin: 0; }
+    .promise {
+      background: #1F3A5C;
+      color: #F1EEE6;
+      padding: 1.1rem 1.3rem;
+      margin: 1.5rem 0 2rem;
+      font-size: 1.05rem;
+    }
+    .promise strong { color: #fff; }
+    h2 {
+      font-family: "Oswald", Arial, sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 1.25rem;
+      background: #A63A2B;
+      color: #FAF8F1;
+      padding: 0.6rem 1rem;
+      margin: 2.5rem 0 1rem;
+    }
+    h2.part2 { background: #1F3A5C; }
+    h2.part3 { background: rgba(31,58,92,.55); }
+    ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+    ol.steps > li {
+      counter-increment: step;
+      position: relative;
+      padding: 0 0 1.4rem 3.3rem;
+    }
+    ol.steps > li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0; top: 0.05rem;
+      width: 2.3rem; height: 2.3rem;
+      border-radius: 50%;
+      background: #1F3A5C;
+      color: #F1EEE6;
+      font-family: "Oswald", Arial, sans-serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .btnword {
+      display: inline-block;
+      font-family: "Oswald", Arial, sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      background: #FAF8F1;
+      border: 1.5px solid #1F3A5C;
+      padding: 0.05rem 0.55rem;
+      white-space: nowrap;
+    }
+    .type {
+      font-family: "Oswald", Arial, sans-serif;
+      background: #fff;
+      border: 1.5px dashed #A63A2B;
+      padding: 0.1rem 0.55rem;
+      font-size: 1.05rem;
+      overflow-wrap: anywhere;
+    }
+    .note {
+      background: #E9E3D4;
+      border-left: 4px solid #A63A2B;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      margin: 0.6rem 0 0;
+    }
+    .stop {
+      margin-top: 2.5rem;
+      border: 2px solid #1F3A5C;
+      background: #FAF8F1;
+      padding: 1.2rem 1.3rem;
+      text-align: center;
+    }
+    .stop p { margin: 0; }
+    .stop .big {
+      font-family: "Oswald", Arial, sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 1.15rem;
+      margin-bottom: 0.3rem;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: rgba(31,58,92,.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Getting Your Website<br>Its Real Address</h1>
+      <p class="sub">Two sign-ups, about 15 minutes, and you're done.<br>Ben handles everything after that.</p>
+    </header>
+
+    <div class="promise">
+      <strong>What this costs you: $11 a year. That's everything.</strong><br>
+      The website itself is free to run. You're only buying the name
+      <strong>dunsmoreservices.com</strong> so customers can find you.
+      Nothing here signs you up for a monthly bill.
+    </div>
+
+    <p><strong>Have ready:</strong> your bank card, and the password to your
+    dunsmoreservicesllc@gmail.com email (confirmation emails will land there).
+    Easiest on a computer, but a phone works fine.</p>
+
+    <h2>Part 1 — Buy the name (needs your card)</h2>
+    <ol class="steps">
+      <li>Open your internet browser (Safari or Chrome) and go to:
+        <span class="type">porkbun.com</span>
+        <div class="note">Porkbun is just a store that sells website names.
+        Millions of businesses use it. Yes, it's really called that.</div>
+      </li>
+      <li>In the big search box in the middle of the page, type
+        <span class="type">dunsmoreservices.com</span> and hit search.</li>
+      <li>In the list that comes up, find the line that says exactly
+        <strong>dunsmoreservices.com</strong> — around $11. Tap the
+        <span class="btnword">+</span> or <span class="btnword">Add to cart</span>
+        button on that line only.
+        <div class="note">It will show a bunch of other endings like .net,
+        .org, .xyz — skip all of those. You only want the .com.</div>
+      </li>
+      <li>Tap the cart at the top of the page, then
+        <span class="btnword">Checkout</span> / <span class="btnword">Continue</span>.</li>
+      <li>It asks you to make an account. Use your business email:
+        <span class="type">dunsmoreservicesllc@gmail.com</span> — make up a
+        password and <strong>write it down somewhere you won't lose it</strong>.
+        Fill in your real name and address if it asks (that's required for
+        owning a website name — it stays private).</li>
+      <li>On the payment page, check the total: it should be about
+        <strong>$11 for 1 year</strong>. If it offers extras — hosting, email,
+        SSL, anything — <strong>say no to all of them</strong>. You don't need
+        any of it. (The free "WHOIS Privacy" is fine — leave it on.)</li>
+      <li>Enter your card and finish the purchase.</li>
+      <li>Open your dunsmoreservicesllc@gmail.com email. If there's a message
+        from Porkbun asking you to <strong>verify or confirm</strong> your
+        email or contact info, open it and tap the confirm button.
+        <div class="note">Don't skip this one — website names can get frozen
+        if the email never gets confirmed.</div>
+      </li>
+    </ol>
+
+    <h2 class="part2">Part 2 — One more account (free, no card)</h2>
+    <ol class="steps">
+      <li>Go to: <span class="type">github.com</span> and tap
+        <span class="btnword">Sign up</span>.
+        <div class="note">GitHub is where the website's files live —
+        think of it as the filing cabinet your website sits in. This puts
+        that filing cabinet in <strong>your</strong> name, not Ben's.</div>
+      </li>
+      <li>Email: <span class="type">dunsmoreservicesllc@gmail.com</span> —
+        make up a password and write this one down too.</li>
+      <li>When it asks for a username, type:
+        <span class="type">dunsmoreservices</span>
+        (Ben checked — it's available).</li>
+      <li>It will email a code to your Gmail — go get the code and type it in.</li>
+      <li>If it asks questions about plans or what you do, pick
+        <span class="btnword">Free</span> and tap
+        <span class="btnword">Skip</span> on anything else.</li>
+    </ol>
+
+    <h2 class="part3">Part 3 — Hand it to Ben</h2>
+    <ol class="steps">
+      <li>Text Ben: <em>"Done with both."</em></li>
+      <li>In a day or so you'll get one email from GitHub asking you to
+        <strong>accept the website transfer</strong> — Ben will be on the
+        phone with you, it's one green button. That's the moment the website
+        officially becomes yours.</li>
+    </ol>
+
+    <div class="stop">
+      <p class="big">Confused at any step? Just stop.</p>
+      <p>Nothing can break. Call Ben and finish it together.<br>
+      And nobody ever needs your card number except the Porkbun checkout
+      page — Ben will never ask for it.</p>
+    </div>
+
+    <footer>Dunsmore Services, LLC &nbsp;&middot;&nbsp; website setup &nbsp;&middot;&nbsp; $11.08/year total</footer>
+  </div>
+</body>
+</html>
